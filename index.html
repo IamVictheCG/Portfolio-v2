@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victor Okechukwu | Frontend Engineer & Data Analyst</title>
+    <!-- data-rh lets react-helmet-async replace these defaults per route instead of duplicating them -->
+    <meta data-rh="true"
+      name="description"
+      content="Victor Okechukwu (CG), a frontend engineer and data analyst in Sunderland, UK. Full-stack products with Next.js, React Native and Supabase, plus Power BI, SQL and Python analysis."
+    />
+    <meta name="theme-color" content="#1e1b4b" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Victor Okechukwu" />
+    <meta data-rh="true" property="og:title" content="Victor Okechukwu | Frontend Engineer & Data Analyst" />
+    <meta data-rh="true"
+      property="og:description"
+      content="Full-stack products with Next.js, React Native and Supabase, plus Power BI, SQL and Python analysis. Based in Sunderland, UK."
+    />
+    <meta data-rh="true" property="og:url" content="https://victorcg.netlify.app" />
+    <!-- TODO(CG): create a 1200x630 share image at public/images/og-image.png -->
+    <meta property="og:image" content="https://victorcg.netlify.app/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta data-rh="true" name="twitter:title" content="Victor Okechukwu | Frontend Engineer & Data Analyst" />
+    <meta data-rh="true"
+      name="twitter:description"
+      content="Full-stack products with Next.js, React Native and Supabase, plus Power BI, SQL and Python analysis. Based in Sunderland, UK."
+    />
+    <meta name="twitter:image" content="https://victorcg.netlify.app/images/og-image.png" />
+  </head>
+  <body>
+    <!-- Static copy of the contact form so Netlify Forms detects it at build time.
+         The visible form is rendered by React in src/components/ContactForm.tsx; keep the field names in sync. -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
