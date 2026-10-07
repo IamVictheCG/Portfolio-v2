@@ -36,15 +36,6 @@
     <meta name="twitter:image" content="https://victorcg.netlify.app/images/og-image.png" />
   </head>
   <body>
-    <!-- Static copy of the contact form so Netlify Forms detects it at build time.
-         The visible form is rendered by React in src/components/ContactForm.tsx; keep the field names in sync. -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-      <input name="bot-field" />
-    </form>
-
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

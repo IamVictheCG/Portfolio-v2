@@ -109,10 +109,11 @@ export default function Home() {
               >
                 Get In Touch
               </a>
-              {/* TODO(CG): add CV PDF at public/resume.pdf (this link 404s until then) */}
+              {/* To update the CV, replace public/Victor_Okechukwu_CV.pdf (keep the filename) */}
               <a
-                href="/resume.pdf"
-                download
+                href="/Victor_Okechukwu_CV.pdf"
+                download="Victor_Okechukwu_CV.pdf"
+                type="application/pdf"
                 className={`px-8 py-3 border-2 border-purple-400 text-purple-200 rounded-lg font-semibold hover:bg-purple-500 hover:text-white transition-all duration-200 flex items-center space-x-2 ${focusRing}`}
               >
                 <Download size={20} aria-hidden="true" />
